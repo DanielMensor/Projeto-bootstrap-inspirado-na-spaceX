@@ -12,9 +12,8 @@
 .body-home .container1 {
   background-image: url("../../Imagens/home/01.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
-  background-position: 0px -100px;
+  background-size: cover;
+  background-position: center;
   height: 100vh;
 }
 .body-home .content1 {
@@ -23,34 +22,31 @@
 .body-home .container2 {
   background-image: url("../../Imagens/home/03.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
+  background-size: cover;
+  background-position: center;
   height: 100vh;
-  padding-top: 200px;
-  background-position: 0 -50px;
 }
 .body-home .content2 {
   display: flex;
   flex-direction: column;
-  padding-right: 45%;
+  justify-content: center;
+  width: 55vw;
+  height: 100vh;
+  margin-left: 80px;
 }
 .body-home .container3 {
   background-image: url("../../Imagens/home/02.gif");
   background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
+  background-size: cover;
+  background-position: center;
   height: 100vh;
-  padding-top: 200px;
-  background-position: 0 -50px;
 }
 .body-home .container4 {
   background-image: url("../../Imagens/home/04.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
+  background-size: cover;
+  background-position: center;
   height: 100vh;
-  padding-top: 200px;
-  background-position: 0 -100px;
 }
 
 .links-footer {
@@ -92,6 +88,22 @@
   color: gray;
 }
 
+@media (max-width: 860px) {
+  .body-home .content2 {
+    margin-left: 45px;
+    width: 80vw;
+  }
+}
+@media (max-width: 405px) {
+  .logo {
+    width: 175px;
+    margin-left: 25px;
+  }
+  .body-home .content2 {
+    margin-left: 25px;
+    width: 80vw;
+  }
+}
 /* falcon */
 .body-falcon9 {
   background-color: black;
@@ -119,6 +131,14 @@
 .body-falcon9 .content1 p {
   font-weight: 500;
 }
+@media (max-width: 469px) {
+  .body-falcon9 .content1 h1 {
+    font-size: 58px;
+  }
+  .body-falcon9 .content1 p {
+    font-size: 18px;
+  }
+}
 .body-falcon9 .container2 {
   background-color: black;
   height: 40vh;
@@ -128,7 +148,8 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  height: 40vh;
+  height: 100%;
+  flex-wrap: wrap;
 }
 .body-falcon9 .container2 .content2 h2 {
   font-size: 90px;
@@ -136,6 +157,16 @@
 .body-falcon9 .container2 .content2 p {
   font-size: 20px;
   font-weight: 400;
+}
+@media (max-width: 768px) {
+  .body-falcon9 .container2 {
+    height: 80vh;
+  }
+}
+@media (max-width: 449px) {
+  .body-falcon9 .container2 {
+    height: 120vh;
+  }
 }
 .body-falcon9 .container3 {
   background-image: url("../../Imagens/falcon9/02.jpg");
@@ -149,10 +180,19 @@
   width: 45vw;
   font-size: 24px;
   font-weight: 400;
-  display: flex;
   align-items: center;
   height: 100vh;
   line-height: 50px;
+}
+@media (max-width: 1000px) {
+  .body-falcon9 .container3 .content3 {
+    width: 80vw;
+  }
+}
+@media (max-width: 679px) {
+  .body-falcon9 .container3 .content3 {
+    font-size: 16px;
+  }
 }
 .body-falcon9 .container4 {
   height: 100vh;
@@ -187,6 +227,23 @@
   border-bottom: white 1px solid;
   padding: 10px;
 }
+@media (max-width: 1000px) {
+  .body-falcon9 .container4 .content4 .c1 .c1-item1 {
+    margin-left: 60px;
+    width: 80vw;
+  }
+  .body-falcon9 .container4 .content4 .c1 .c1-item1 p {
+    font-size: 12px;
+  }
+  .body-falcon9 .container4 .content4 .c1 .c1-item1 h3 {
+    font-size: 22px;
+  }
+  .body-falcon9 .container4 .content4 .c1 .c1-item1 table tr td {
+    font-size: 14px;
+    border-bottom: white 1px solid;
+    padding: 5px;
+  }
+}
 .body-falcon9 .container4 .content4 .c2 {
   background-image: url(../../Imagens/falcon9/04.jpg);
   background-repeat: no-repeat;
@@ -207,6 +264,30 @@
 }
 .body-falcon9 .container4 .content4 .c2 div h3 {
   font-size: 32px;
+}
+@media (max-width: 900px) {
+  .body-falcon9 .container4 .content4 .c2 div {
+    margin-left: 100px;
+    width: 50vw;
+  }
+}
+@media (max-width: 500px) {
+  .body-falcon9 .container4 .content4 .c2 div {
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+    width: 80vw;
+  }
+  .body-falcon9 .container4 .content4 .c2 div p {
+    font-size: 12px;
+  }
+  .body-falcon9 .container4 .content4 .c2 div h3 {
+    font-size: 22px;
+  }
+  .body-falcon9 .container4 .content4 .c2 div table tr td {
+    font-size: 14px;
+    border-bottom: white 1px solid;
+    padding: 5px;
+  }
 }
 .body-falcon9 .container4 .content4 .c3 {
   background-image: url("../../Imagens/falcon9/05.jpg");
@@ -234,6 +315,23 @@
   border-bottom: white 1px solid;
   padding: 10px;
 }
+@media (max-width: 900px) {
+  .body-falcon9 .container4 .content4 .c3 div {
+    margin-left: 60px;
+    width: 80vw;
+  }
+  .body-falcon9 .container4 .content4 .c3 div p {
+    font-size: 16px;
+  }
+  .body-falcon9 .container4 .content4 .c3 div h3 {
+    font-size: 22px;
+  }
+  .body-falcon9 .container4 .content4 .c3 div table tr td {
+    font-size: 14px;
+    border-bottom: white 1px solid;
+    padding: 5px;
+  }
+}
 .body-falcon9 .container4 .content4 .c4 {
   background-image: url("../../Imagens/falcon9/06.jpg");
   background-repeat: no-repeat;
@@ -257,6 +355,30 @@
 }
 .body-falcon9 .container4 .content4 .c4 div .sub-title {
   font-size: 18px;
+}
+@media (max-width: 900px) {
+  .body-falcon9 .container4 .content4 .c4 div {
+    margin-left: 100px;
+    width: 50vw;
+  }
+}
+@media (max-width: 500px) {
+  .body-falcon9 .container4 .content4 .c4 div {
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+    width: 80vw;
+  }
+  .body-falcon9 .container4 .content4 .c4 div p {
+    font-size: 12px;
+  }
+  .body-falcon9 .container4 .content4 .c4 div h3 {
+    font-size: 22px;
+  }
+  .body-falcon9 .container4 .content4 .c4 div table tr td {
+    font-size: 14px;
+    border-bottom: white 1px solid;
+    padding: 5px;
+  }
 }
 .body-falcon9 .container4 .content4 .c5 {
   background-image: url("../../Imagens/falcon9/07.jpg");
@@ -284,6 +406,23 @@
   border-bottom: white 1px solid;
   padding: 10px;
 }
+@media (max-width: 900px) {
+  .body-falcon9 .container4 .content4 .c5 div {
+    margin-left: 60px;
+    width: 80vw;
+  }
+  .body-falcon9 .container4 .content4 .c5 div p {
+    font-size: 16px;
+  }
+  .body-falcon9 .container4 .content4 .c5 div h3 {
+    font-size: 22px;
+  }
+  .body-falcon9 .container4 .content4 .c5 div table tr td {
+    font-size: 14px;
+    border-bottom: white 1px solid;
+    padding: 5px;
+  }
+}
 .body-falcon9 .container5 {
   background-image: url("../../Imagens/falcon9/08.jpg");
   background-repeat: no-repeat;
@@ -310,6 +449,18 @@
   border-bottom: white 1px solid;
   padding: 10px;
 }
+@media (max-width: 1000px) {
+  .body-falcon9 .container5 .content5 {
+    margin-left: 75px;
+    width: 80vw;
+  }
+}
+@media (max-width: 679px) {
+  .body-falcon9 .container5 .content5 {
+    margin-left: 40px;
+    font-size: 16px;
+  }
+}
 .body-falcon9 .container6 {
   height: 100vh;
 }
@@ -323,11 +474,17 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .body-falcon9 .container7 button {
   border: solid white 2px;
   border-radius: 5px;
   font-size: 16px;
+}
+@media (max-width: 521px) {
+  .body-falcon9 .container7 button {
+    margin-top: 5px;
+  }
 }
 
 /* HumanFlight */
@@ -340,13 +497,12 @@
   background-repeat: no-repeat;
   height: 100vh;
   background-position: center;
-  width: 100%;
   background-size: cover;
 }
 .body-human .container1 .gray {
   color: rgb(56, 56, 56);
 }
-.body-human .content1 {
+.body-human .container1 .content1 {
   height: 88vh;
   display: flex;
   justify-content: center;
@@ -354,12 +510,28 @@
   text-align: center;
   flex-direction: column;
 }
-.body-human .content1 .title-human {
+.body-human .container1 .content1 .title-human {
   font-size: 120px;
 }
-.body-human .content1 .subtitle-human {
+.body-human .container1 .content1 .subtitle-human {
   font-size: 30px;
   font-weight: 300;
+}
+@media (max-width: 811px) {
+  .body-human .container1 .content1 .title-human {
+    font-size: 80px;
+  }
+  .body-human .container1 .content1 .subtitle-human {
+    font-size: 22px;
+  }
+}
+@media (max-width: 520px) {
+  .body-human .container1 .content1 .title-human {
+    font-size: 50px;
+  }
+  .body-human .container1 .content1 .subtitle-human {
+    font-size: 16px;
+  }
 }
 .body-human .container2 {
   background-color: black;
@@ -371,8 +543,13 @@
 .body-human .container2 .content2 {
   font-weight: 400;
   font-size: 20px;
-  width: 800px;
+  width: 80vw;
   text-align: center;
+}
+@media (max-width: 720px) {
+  .body-human .container2 .content2 {
+    font-size: 18px;
+  }
 }
 .body-human .container3 {
   background-image: url(../../Imagens/humanFlight/02.jpg);
@@ -398,6 +575,11 @@
 .body-human .container3 .content3 h6 {
   font-weight: 300;
 }
+@media (max-width: 720px) {
+  .body-human .container3 .content3 {
+    padding-left: 45%;
+  }
+}
 .body-human .container4 {
   background-image: url("../../Imagens/humanFlight/03.jpg");
   background-repeat: no-repeat;
@@ -421,6 +603,11 @@
 }
 .body-human .container4 .content4 h6 {
   font-weight: 300;
+}
+@media (max-width: 520px) {
+  .body-human .container4 .content4 {
+    padding-left: 20px;
+  }
 }
 .body-human .container5 {
   background-image: url(../../Imagens/humanFlight/04.jpg);
@@ -446,6 +633,11 @@
 .body-human .container5 .content5 h6 {
   font-weight: 300;
 }
+@media (max-width: 720px) {
+  .body-human .container5 .content5 {
+    padding-left: 40%;
+  }
+}
 .body-human .container6 {
   background-image: url("../../Imagens/humanFlight/05.jpg");
   background-repeat: no-repeat;
@@ -470,17 +662,28 @@
 .body-human .container6 .content6 h6 {
   font-weight: 300;
 }
+@media (max-width: 520px) {
+  .body-human .container6 .content6 {
+    padding-left: 20px;
+  }
+}
 .body-human .container7 {
   display: flex;
   height: 80vh;
   text-align: center;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .body-human .container7 button {
   border: solid white 2px;
   border-radius: 5px;
   font-size: 16px;
+}
+@media (max-width: 521px) {
+  .body-human .container7 button {
+    margin-top: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

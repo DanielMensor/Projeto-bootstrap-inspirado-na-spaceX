@@ -29,8 +29,20 @@
         }
     }
 
+    @media(max-width:469px){
+        .content1{
+            h1{
+                font-size: 58px;
+            }
+
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+
     .container2 {
-        background-color: black;
+        background-color: black; 
         height: 40vh;
 
         .content2 {
@@ -38,7 +50,8 @@
             justify-content: space-around;
             align-items: center;
             text-align: center;
-            height: 40vh;
+            height: 100%;
+            flex-wrap: wrap;
 
             h2 {
                 font-size: 90px;
@@ -48,6 +61,20 @@
                 font-size: 20px;
                 font-weight: 400;
             }
+        }
+
+    }
+    @media(max-width:768px){
+        .container2{
+            height: 80vh;
+            
+        }
+    }
+
+    @media(max-width:449px){
+        .container2{
+            height: 120vh;
+            
         }
     }
 
@@ -63,10 +90,21 @@
             width: 45vw;
             font-size: 24px;
             font-weight: 400;
-            display: flex;
             align-items: center;
             height: 100vh;
             line-height: 50px;
+        }
+
+        @media(max-width:1000px){
+            .content3{
+                width: 80vw;
+            }
+        }
+
+        @media(max-width:679px){
+            .content3{
+                font-size: 16px;
+            }
         }
     }
 
@@ -108,6 +146,27 @@
 
                 }
 
+                @media(max-width:1000px){
+                    .c1-item1 {
+                        margin-left: 60px;
+                        width: 80vw;
+                        p {
+                            font-size: 12px;
+                        }
+    
+                        h3 {
+                            font-size: 22px;
+                        }
+    
+                        table tr td {
+                            font-size: 14px;
+                            border-bottom: white 1px solid;
+                            padding: 5px;
+                        }
+    
+                    }
+                }
+
             }
 
             .c2 {
@@ -131,6 +190,35 @@
 
                     h3 {
                         font-size: 32px;
+                    }
+                }
+
+                @media(max-width:900px){
+                    div {
+                        margin-left: 100px;
+                        width: 50vw;
+                    }
+                }
+
+                @media(max-width:500px){
+                    div {
+                        color: rgb(255, 255, 255);
+                        margin-left: 50px;
+                        width: 80vw;
+                        p {
+                            font-size: 12px;
+                        }
+    
+                        h3 {
+                            font-size: 22px;
+                        }
+    
+                        table tr td {
+                            font-size: 14px;
+                            border-bottom: white 1px solid;
+                            padding: 5px;
+                        }
+    
                     }
                 }
             }
@@ -164,6 +252,26 @@
                         padding: 10px;
                     }
                 }
+                @media(max-width:900px){
+                    div {
+                        margin-left: 60px;
+                        width: 80vw;
+                        p {
+                            font-size: 16px;
+                        }
+    
+                        h3 {
+                            font-size: 22px;
+                        }
+    
+                        table tr td {
+                            font-size: 14px;
+                            border-bottom: white 1px solid;
+                            padding: 5px;
+                        }
+    
+                    }
+                }
             }
 
             .c4 {
@@ -191,6 +299,35 @@
 
                     .sub-title {
                         font-size: 18px;
+                    }
+                }
+
+                @media(max-width:900px){
+                    div {
+                        margin-left: 100px;
+                        width: 50vw;
+                    }
+                }
+
+                @media(max-width:500px){
+                    div {
+                        color: rgb(255, 255, 255);
+                        margin-left: 50px;
+                        width: 80vw;
+                        p {
+                            font-size: 12px;
+                        }
+    
+                        h3 {
+                            font-size: 22px;
+                        }
+    
+                        table tr td {
+                            font-size: 14px;
+                            border-bottom: white 1px solid;
+                            padding: 5px;
+                        }
+    
                     }
                 }
             }
@@ -222,6 +359,27 @@
                         font-size: 20px;
                         border-bottom: white 1px solid;
                         padding: 10px;
+                    }
+                }
+
+                @media(max-width:900px){
+                    div {
+                        margin-left: 60px;
+                        width: 80vw;
+                        p {
+                            font-size: 16px;
+                        }
+    
+                        h3 {
+                            font-size: 22px;
+                        }
+    
+                        table tr td {
+                            font-size: 14px;
+                            border-bottom: white 1px solid;
+                            padding: 5px;
+                        }
+    
                     }
                 }
             }
@@ -257,6 +415,21 @@
                 padding: 10px;
             }
         }
+
+        
+        @media(max-width:1000px){
+            .content5{
+                margin-left: 75px;
+                width: 80vw;
+            }
+        }
+
+        @media(max-width:679px){
+            .content5{
+                margin-left: 40px;
+                font-size: 16px;
+            }
+        }
     }
 
     .container6{
@@ -276,13 +449,23 @@
         text-align: center;
         justify-content: center;
         align-items: center;
-        
+        flex-wrap: wrap;
+
 
         button{
             border: solid white 2px;
             border-radius: 5px;
             font-size: 16px;
         }
+
+        @media(max-width:521px){
+            button{
+                margin-top: 5px;
+            }
+        }
+
+        
         
     }
 }
+
